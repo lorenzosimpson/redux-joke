@@ -1,14 +1,18 @@
 import React, { useEffect } from 'react';
 import {connect} from 'react-redux';
 import { fetchJoke } from '../actions/index';
+import { Spinner } from 'reactstrap';
+
+import { Button } from 'reactstrap';
 
 function Joke(props) {
 
   return (
-    <div>
-      <button onClick={props.fetchJoke}>Get Joke</button>
-      <p>{props.joke.setup}</p>
+    <div className='joke-container'>
+      <h5>{props.joke.setup}</h5>
       <p>{props.joke.punchline}</p>
+
+      <Button color="success" onClick={props.fetchJoke}>Get Joke</Button>
     </div>
   )
 };

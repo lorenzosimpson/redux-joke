@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 //redux
 import { Provider } from 'react-redux';
