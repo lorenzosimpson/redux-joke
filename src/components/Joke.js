@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {connect} from 'react-redux';
 import { fetchJoke } from '../actions/index';
-import { Spinner } from 'reactstrap';
+
 
 import { Button } from 'reactstrap';
 
